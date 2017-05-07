@@ -31,3 +31,8 @@ Edit config.ini
 2. Run scanbalance
 
     shell> python scanbalance.py config.ini okcash
+
+## Execution screenshots
+
+* [bringing up OKCash wallet](http://prntscr.com/f58qv8)
+* [checking the balance](http://prntscr.com/f58roa) against too low a balance
