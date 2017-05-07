@@ -12,3 +12,5 @@ class BalanceTooSmall(Exception):
     def error_msg(balance, allowed):
         return "Balance of {} is below mininum allowable balance of {}".format(
             balance, allowed)
+
+    
