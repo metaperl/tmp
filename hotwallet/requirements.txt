@@ -1,0 +1,4 @@
+argh
+jsonrpc
+python-bitcoinrpc
+requests
