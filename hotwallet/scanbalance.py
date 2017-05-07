@@ -19,7 +19,6 @@ class Wallet(object):
 
         self.config, self.wallet_config_label = config, wallet_config_label
 
-
     @property
     def connection(self):
         rpc_user = self.config.get(self.wallet_config_label, 'rpcuser')
