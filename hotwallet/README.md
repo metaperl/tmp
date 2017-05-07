@@ -28,8 +28,6 @@ Edit config.ini
 
     shell> OKCash -server -rpcuser=uname -rpcpassword=passwd
 
-    shell> python scanbalance.py okcash
-
 2. Run scanbalance
 
     shell> python scanbalance.py config.ini okcash
