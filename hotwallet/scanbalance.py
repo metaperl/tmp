@@ -20,7 +20,7 @@ class Wallet(object):
         self.config, self.wallet_config_label = config, wallet_config_label
 
 
-    @property   
+    @property
     def connection(self):
         rpc_user = self.config.get(self.wallet_config_label, 'rpcuser')
         rpc_password = self.config.get(self.wallet_config_label, 'rpcpassword')
@@ -32,7 +32,7 @@ class Wallet(object):
 
         return rpc_connection
 
-    @property   
+    @property
     def max_allowed(self):
         m = self.config.getfloat(self.wallet_config_label, 'max')
         logging.debug("max allowed: %.8f", m)
@@ -94,5 +94,6 @@ def main(config_file, wallet):
         notify_admin(wallet, e, "Balance too Small")
 
 
+# bump
 if __name__ == '__main__':
     argh.dispatch_command(main)
