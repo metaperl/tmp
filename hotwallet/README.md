@@ -27,6 +27,7 @@ Edit config.ini
 1. Invoke OKCash via:
 
     shell> OKCash -server -rpcuser=uname -rpcpassword=passwd
+
     shell> python scanbalance.py okcash
 
 2. Run scanbalance
