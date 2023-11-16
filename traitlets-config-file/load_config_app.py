@@ -33,7 +33,7 @@ class MyClass(Configurable):
 
 class MyApp(Application):
     classes = [MyClass]
-    config_file = Unicode(default_value="base_config", help="base name of config file").tag(
+    config_file = Unicode(default_value="base_config.py", help="base name of config file").tag(
         config=True
     )
     aliases = {
@@ -44,11 +44,13 @@ class MyApp(Application):
 
     def initialize(self, argv=None):
         super().initialize(argv=argv)
+        print(f"path of file is {Path(__file__)}")
         if self.config_file:
-            self.load_config_file(self.config_file, [Path(__file__)])
+            self.load_config_file(self.config_file, [Path(__file__).parent])
 
     def start(self):
         print(MyClass(parent=self))
+
 
 
 if __name__ == "__main__":
